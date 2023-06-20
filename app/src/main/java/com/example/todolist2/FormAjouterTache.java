@@ -60,7 +60,7 @@ public class FormAjouterTache extends AppCompatActivity {
         txtDateFin = (EditText) findViewById(R.id.txtDateFin);
         simpleDateFormat = new SimpleDateFormat("HH:mm", Locale.getDefault());
         txtTitreTache = (EditText) findViewById(R.id.txtTitreTache);
-        txtDescriptionTache = (EditText) findViewById(R.id.txtTitreTache);
+        txtDescriptionTache = (EditText) findViewById(R.id.txtDescriptionTache);
         btnAjouterTache = (Button) findViewById(R.id.btnAjouterTache);
         // crée une instance de la base de données
         database = MyDatabase.getInstance(FormAjouterTache.this);
@@ -108,9 +108,6 @@ public class FormAjouterTache extends AppCompatActivity {
     public void afficherDateTimePickerDialog(View view) {
         if (view == btnSelectDateDebut){
             Calendar calendar = Calendar.getInstance();
-            /*int annee = calendar.get(Calendar.YEAR);
-            int mois = calendar.get(Calendar.MONTH);
-            int jour = calendar.get(Calendar.DAY_OF_MONTH);*/
             int heure = calendar.get(Calendar.HOUR_OF_DAY);
             int minute = calendar.get(Calendar.MINUTE);
             TimePickerDialog timePickerDialog = new TimePickerDialog(FormAjouterTache.this, new TimePickerDialog.OnTimeSetListener() {
