@@ -9,25 +9,26 @@ Les fonctionnalités principales de cette application incluent :
 
 ## Utilisation :
 - l'activité principale de l'application :  
-<img src="https://github.com/abdessalamboulayat/to-do-list-take-notes/assets/104778745/4efa3c1b-6ae3-4354-b108-0b2c0e32832d" width="250" height="400" alt="Screenshot of the main activity" />
+<img src="https://github.com/abdessalamboulayat/to-do-list-take-notes/assets/104778745/159d9d9a-49c3-4deb-a603-8c78b09da8f1" width="250" height="400" alt="Screenshot of the main activity" />
 
 
 - Si vous cliquez sur le button "MES TÂCHES", une nouvelle activité qui contient la liste de vos tâches à faire qui s'affiche, elle vous offre la posssibilité d'ajouter une autre tâche ou supprimer ou modifier une tâche existante
 
 
 
-<img src="https://github.com/abdessalamboulayat/to-do-list-take-notes/assets/104778745/289c10fe-df0d-4d52-bc40-7121b7e00508" width="250" height="400" alt="Screenshot of the main activity" />
+<img src="https://github.com/abdessalamboulayat/to-do-list-take-notes/assets/104778745/147b6b5c-6de9-4618-946a-52b1324148a6" width="250" height="400" alt="Screenshot of the main activity" />
 
 - Si vous cliquez sur le button "MES NOTES", une nouvelle activité qui contient la liste de vos notes qui s'affiche, elle vous offre la posssibilité d'ajouter une note ou supprimer ou modifier une note existante
 
 
-<img src="https://github.com/abdessalamboulayat/to-do-list-take-notes/assets/104778745/f27fb2e0-176a-4718-92c3-78b9a496ed84" width="250" height="400" alt="Screenshot of the main activity" />
+<img src="https://github.com/abdessalamboulayat/to-do-list-take-notes/assets/104778745/2d2218ee-d839-4744-8a70-2817909b7922" width="250" height="400" alt="Screenshot of the main activity" />
 
 - le formulaire d'ajout d'une nouvelle tâche à faire :
-<img src="https://github.com/abdessalamboulayat/to-do-list-take-notes/assets/104778745/e8b0a33c-6d81-4f4a-992e-24b2aa6ae5c4" width="250" height="400" alt="Screenshot of the main activity" />
+<img src="https://github.com/abdessalamboulayat/to-do-list-take-notes/assets/104778745/304fe662-b78b-4c64-90e4-5ffc32495e73" width="250" height="400" alt="Screenshot of the main activity" />
+
 
 - le formulaire d'ajout d'une nouvelle note :
 
-<img src="https://github.com/abdessalamboulayat/to-do-list-take-notes/assets/104778745/522440f1-3b53-43c3-884d-62e240476187" width="250" height="400" alt="Screenshot of the main activity" />
+<img src="https://github.com/abdessalamboulayat/to-do-list-take-notes/assets/104778745/d86ac938-6ec2-4465-9d1d-5265b9f73e7f" width="250" height="400" alt="Screenshot of the main activity" />
 
 
