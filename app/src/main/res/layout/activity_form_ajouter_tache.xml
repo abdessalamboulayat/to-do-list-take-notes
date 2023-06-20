@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#525FE1"
+    android:background="#1F6E8C"
     tools:context=".FormAjouterTache">
     <TextView
         android:id="@+id/titre"
@@ -17,7 +17,7 @@
         android:layout_margin="20dp"
         android:gravity="center"/>
     <EditText
-        android:id="@+id/titreTache"
+        android:id="@+id/txtTitreTache"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/titre"
@@ -30,10 +30,10 @@
         android:drawableLeft="@drawable/task_24"
         android:drawablePadding="20dp"/>
     <EditText
-        android:id="@+id/descriptionTache"
+        android:id="@+id/txtDescriptionTache"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_below="@id/titreTache"
+        android:layout_below="@id/txtTitreTache"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -49,14 +49,14 @@
         android:id="@+id/dateDebutLinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/descriptionTache"
+        android:layout_below="@id/txtDescriptionTache"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/buttonSelectDateTime"
+            android:id="@+id/btnSelectDateDebut"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:text="Date Début"
@@ -64,7 +64,7 @@
             android:drawableLeft="@drawable/time_24"
             android:onClick="afficherDateTimePickerDialog" />
         <EditText
-            android:id="@+id/txtDateTime"
+            android:id="@+id/txtDateDebut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -82,7 +82,7 @@
         android:layout_marginBottom="10dp"
         android:orientation="horizontal">
         <Button
-            android:id="@+id/buttonSelectDateTimeFin"
+            android:id="@+id/btnSelectDateFin"
             android:layout_width="180dp"
             android:layout_height="wrap_content"
             android:text="Date écheance"
@@ -90,7 +90,7 @@
             android:drawableLeft="@drawable/time_24"
             android:onClick="afficherDateTimePickerDialog" />
         <EditText
-            android:id="@+id/txtDateTimeFin"
+            android:id="@+id/txtDateFin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
@@ -103,6 +103,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/dateFinLinear"
         android:layout_centerHorizontal="true"
-        android:backgroundTint="#FFA41B"
+        android:backgroundTint="#F86F03"
         android:text="Ajouter" />
 </RelativeLayout>

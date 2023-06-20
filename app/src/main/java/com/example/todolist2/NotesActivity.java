@@ -6,11 +6,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.Observer;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -27,6 +29,8 @@ public class NotesActivity extends AppCompatActivity {
     private final int REQUEST_CODE = 200;
     // list view pour afficher les notes
     private ListView listViewNotes;
+    // le button qui permet de supprimer une note
+    private ImageButton btnSupprimerNote;
     // Adaptateur personnalisé: MyAdapter
     private MyAdapter myAdapter;
     // Button pour ajouter une nouvelle note
@@ -35,22 +39,23 @@ public class NotesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_notes);
+
         listViewNotes = (ListView) findViewById(R.id.listViewNotes);
         ImageButton btnAjouterNote = (ImageButton) findViewById(R.id.btnAjouterNote);
         // crée une instance de la base de données
         database = MyDatabase.getInstance(this);
         // Récupérer la liste des tâches
         LiveData<List<Note>> notes = recupererLesNotes(database);
-
+        // boite de dialogue qui s'affiche à l'utilisateur quand il essaye de supprimer une note
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-
         // instancier l'adaptateur
         //myAdapter = new MyAdapter(this,notes);
         notes.observe(this, new Observer<List<Note>>() {
             @Override
             public void onChanged(List<Note> notes) {
-                myAdapter = new MyAdapter(NotesActivity.this, notes);
+                myAdapter = new MyAdapter(NotesActivity.this, notes, database);
                 // associer l'adaptateur à listView
                 listViewNotes.setAdapter(myAdapter);
                 listViewNotes.setOnItemClickListener(new AdapterView.OnItemClickListener() {

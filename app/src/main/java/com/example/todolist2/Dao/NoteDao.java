@@ -21,4 +21,6 @@ public interface NoteDao {
     LiveData<List<Note>> recupererNotes();
     @Delete
     void supprimerNote(Note note);
+    @Query("SELECT * FROM note WHERE id_note = :id")
+    LiveData<Note> getNoteById(Long id);
 }

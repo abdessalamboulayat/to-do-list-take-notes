@@ -2,9 +2,13 @@ package com.example.todolist2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
+
         btnAfficherTaches = (Button) findViewById(R.id.btnAfficherTaches);
         btnAfficherNotes = (Button) findViewById(R.id.btnAfficherNotes);
         // ajouter eventListner au btnAfficherTaches pour afficher les tâches

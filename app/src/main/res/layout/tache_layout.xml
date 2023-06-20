@@ -1,57 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="10dp"
-    android:orientation="horizontal">
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/titreTache"
+    android:background="#0E2954"
+    android:layout_margin="15dp"
+    android:padding="10dp">
+
+
+
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Titre de la tâche"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            />
-        <TextView
-            android:id="@+id/descriptionTache"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Description de la tâche Description de la tâche Description de la tâche"
-            android:textSize="12sp"
-            android:textStyle="italic"
-            />
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/checkboxTache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitreTache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Titre de la tâche"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDescriptionTache"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Description de la tâche Description de la tâche Description de la tâche"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="italic" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dateDebut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16:30"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+
+                    <Space
+                        android:layout_width="20dp"
+                        android:layout_height="fill_parent" />
+
+                    <TextView
+                        android:id="@+id/dateFin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="16:30"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
             android:orientation="horizontal">
-            <TextView
-                android:id="@+id/dateDebut"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Début: 12/07/2022 16:30"
-                android:textSize="12sp"
-                android:textStyle="italic"
-                />
-            <Space
-                android:layout_width="20dp"
-                android:layout_height="fill_parent"/>
-            <TextView
-                android:id="@+id/dateFin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Fin: 12/07/2022 16:30"
-                android:textSize="12sp"
-                android:textStyle="italic"
-                />
-        </LinearLayout>
-    </LinearLayout>
 
-</LinearLayout>
+            <ImageButton
+                android:id="@+id/btnModifierTache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/edit_note_24" />
+
+            <ImageButton
+                android:id="@+id/btnSupprimerTache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:background="@drawable/circle_background"
+                android:src="@drawable/delete_24" />
+        </LinearLayout>
+
+</RelativeLayout>

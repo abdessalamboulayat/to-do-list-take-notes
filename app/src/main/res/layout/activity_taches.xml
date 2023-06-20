@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#525FE1"
+    android:padding="10dp"
     tools:context=".TachesActivity">
     <ListView
         android:id="@+id/listViewtaches"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-    <Button
+    <ImageButton
         android:id="@+id/btnAjouterTache"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="32dp"
-        android:text="Add"/>
+        android:src="@drawable/add_circle_24"
+        android:background="@android:color/transparent"/>
 </RelativeLayout>

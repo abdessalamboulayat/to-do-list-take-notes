@@ -13,7 +13,6 @@ public class Note {
     private String titre;
     @ColumnInfo(name = "description")
     private String description;
-
     public Note(String titre, String description) {
         this.titre = titre;
         this.description = description;
